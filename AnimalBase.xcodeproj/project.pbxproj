@@ -44,6 +44,7 @@
 			children = (
 				E2618E771FA0C7FA00B04DBA /* AnimalBase */,
 				E2618E761FA0C7FA00B04DBA /* Products */,
+				E2618E7F1FA0C8FE00B04DBA /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				E2618E781FA0C7FA00B04DBA /* main.m */,
-				E2618E7F1FA0C8FE00B04DBA /* README.md */,
 			);
 			path = AnimalBase;
 			sourceTree = "<group>";
