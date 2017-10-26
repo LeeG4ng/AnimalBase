@@ -7,11 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Dog.h"
+#import "Cat.h"
+#import "Person.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        Person *liGang = [[Person alloc] initWithName:@"LiGang"];
+        Dog *puppy = [[Dog alloc] init];
+        Cat *kitty = [[Cat alloc] init];
+        liGang.pet = puppy;
+        liGang.pet.name = @"Max";
+        liGang.pet.owner = liGang;
+        
+        for(int i=0;i<20;i++){//开始抚摸(≧▽≦)
+            [liGang fondle];
+            [kitty beFondled];
+        }
     }
     return 0;
 }

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20582521FA169CB00F7F3D8 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = E20582511FA169CB00F7F3D8 /* Animal.m */; };
+		E20582551FA16A0C00F7F3D8 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = E20582541FA16A0C00F7F3D8 /* Dog.m */; };
+		E20582581FA16A1D00F7F3D8 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = E20582571FA16A1D00F7F3D8 /* Cat.m */; };
 		E2618E791FA0C7FA00B04DBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2618E781FA0C7FA00B04DBA /* main.m */; };
+		E2618E821FA1690600B04DBA /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E2618E811FA1690600B04DBA /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +27,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E20582501FA169CB00F7F3D8 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		E20582511FA169CB00F7F3D8 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		E20582531FA16A0C00F7F3D8 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		E20582541FA16A0C00F7F3D8 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		E20582561FA16A1D00F7F3D8 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		E20582571FA16A1D00F7F3D8 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
 		E2618E751FA0C7FA00B04DBA /* AnimalBase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AnimalBase; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2618E781FA0C7FA00B04DBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E2618E7F1FA0C8FE00B04DBA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E2618E801FA1690600B04DBA /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E2618E811FA1690600B04DBA /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				E2618E781FA0C7FA00B04DBA /* main.m */,
+				E2618E801FA1690600B04DBA /* Person.h */,
+				E2618E811FA1690600B04DBA /* Person.m */,
+				E20582501FA169CB00F7F3D8 /* Animal.h */,
+				E20582511FA169CB00F7F3D8 /* Animal.m */,
+				E20582531FA16A0C00F7F3D8 /* Dog.h */,
+				E20582541FA16A0C00F7F3D8 /* Dog.m */,
+				E20582561FA16A1D00F7F3D8 /* Cat.h */,
+				E20582571FA16A1D00F7F3D8 /* Cat.m */,
 			);
 			path = AnimalBase;
 			sourceTree = "<group>";
@@ -121,7 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20582521FA169CB00F7F3D8 /* Animal.m in Sources */,
+				E2618E821FA1690600B04DBA /* Person.m in Sources */,
+				E20582551FA16A0C00F7F3D8 /* Dog.m in Sources */,
 				E2618E791FA0C7FA00B04DBA /* main.m in Sources */,
+				E20582581FA16A1D00F7F3D8 /* Cat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -243,6 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
