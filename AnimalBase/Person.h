@@ -8,13 +8,18 @@
 
 #import <Foundation/Foundation.h>
 @class Animal;
+@class Person;
 
-@interface Person : NSObject
+@protocol PersonDelegate <NSObject>
+- (void)fondlePetOf: (Person *)person;
+@end
+
+@interface Person : NSObject <PersonDelegate>
 
 @property(nonatomic,strong) NSString *name;
 @property(nonatomic,strong) Animal *pet;
+@property(nonatomic,weak) id <PersonDelegate> delegate;
 
 - (instancetype)initWithName: (NSString *)name;
-- (void)fondle;
 
 @end

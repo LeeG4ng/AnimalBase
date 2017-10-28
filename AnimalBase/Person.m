@@ -19,8 +19,8 @@
     return self;
 }
 
-- (void)fondle{
-    [_pet beFondled];
+- (void)fondlePetOf:(Person *)person{
+    [person.pet beFondled];
 }
 
 @end
